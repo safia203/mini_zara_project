@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes Collection - Zara</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Box Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<style>/* Container des boxes */
+/* Container des boxes */
+.shop-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espace entre chaque box */
+    justify-content: center;
+}
+
+/* Chaque box de chaussures */
+.shop-container .box {
+    background-color: #fff; /* Couleur de fond du cadre */
+    border: 2px solid #ccc; /* Bordure du cadre */
+    border-radius: 10px; /* Bords arrondis */
+    padding: 15px; /* Espace à l'intérieur du cadre */
+    text-align: center;
+    width: 250px; /* Largeur de chaque box */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Ombre douce */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation au hover */
+}
+
+/* Effet au survol */
+.shop-container .box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Image à l'intérieur de la box */
+.shop-container .box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optionnel : coins arrondis sur l'image */
+    margin-bottom: 10px; /* Espace entre l'image et le titre */
+}
+
+/* Titre et prix */
+.shop-container .box h2 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.shop-container .box span {
+    font-size: 14px;
+    color: #555;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+</style>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="nav container">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <img src="img/safiaaa.png">
+            </a>
+            <!-- Menu Links -->
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shoes.html" class="active">Shoes</a></li>
+                <li><a href="promo.html">Promo</a></li>
+                <li><a href="contact.html" class="contact"><i class='bx bxs-contact'></i> Contact</a></li>
+            </ul>
+            <!-- Icons -->
+            <div class="nav-icons">
+                <a href="#" class="user"><i class='bx bxs-user'></i></a>
+                <a href="#" class="cart"><i class='bx bxs-cart'></i></a>
+                <a href="#" class="menu"><i class='bx bx-menu' id="menu-icon"></i></a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Shoes Section -->
+    <section class="shop" id="shoes" style="padding-top: 6rem;">
+        <div class="heading">
+            <h2><span>Shoes</span> Collection</h2>
+        </div>
+        <div class="shop-container container">
+            <div class="box">
+               <img src="img/shoes1.jpg">
+                <h2>Bottines noires avec grosse semelle</h2>
+                <span>5500.00 DA</span>
+                <a href="#"><i class='bx bx-cart-alt'></i></a>
+            </div>
+            <div class="box">
+                <img src="img/shoes2.jpg">
+                <h2>Bottines à talon</h2>
+                <span>9200.00 DA</span>
+                <a href="#"><i class='bx bx-cart-alt'></i></a>
+            </div>
+            <div class="box">
+                <img src="img/shoes3.jpg">
+                <h2>Sandales à talon bas </h2>
+                <span>12000.00 DA</span>
+                <a href="#"><i class='bx bx-cart-alt'></i></a>
+            </div>
+            <div class="box">
+                <img src="img/shoes4.jpg">
+                <h2> Sneakers</h2>
+                <span>4000.00 DA</span>
+                <a href="#"><i class='bx bx-cart-alt'></i></a>
+            </div>
+            <div class="box">
+                <img src="img/shoes5.jpg">
+                <h2>Escarpins rouges à nœud </h2>
+                <span>10500.00 DA</span>
+                <a href="#"><i class='bx bx-cart-alt'></i></a>
+            </div>         
+            <div class="box">
+                <img src="img/shoes6.jpg">
+                <h2>Escarpins noirs à talon aiguille avec nœud</h2>
+                <span>8900.00 DA</span>
+                <a href="#"><i class='bx bx-cart-alt'></i></a>
+            </div>
+            <div class="box">
+                <img src="img/shoes7.jpg">
+                <h2>Sneakers blanches montantes (futuristes/sport)</h2>
+                <span>3900.00 DA</span>
+                <a href="#"><i class='bx bx-cart-alt'></i></a>
+            </div>
+            <div class="box">
+                <img src="img/shoes8.jpg">
+                <h2>Escarpins ouverts (slingback)</h2>
+                <span>8900.00 DA</span>
+                <a href="#"><i class='bx bx-cart-alt'></i></a>
+            </div>
+             <div class="box">
+                <img src="img/shoes9.jpg">
+                <h2>Sneakers blanches simple</h2>
+                <span>3500.00 DA</span>
+                <a href="#"><i class='bx bx-cart-alt'></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter container">
+        <div class="heading">
+            <h2>Subscribe <span>newsletter</span></h2>
+        </div>
+        <form action="">
+            <input type="email" placeholder="Enter your email..." class="email-box" required>
+            <input type="submit" value="Subscribe" class="btn">
+        </form>
+    </section>
+    
+    <!-- Footer -->
+    <section class="footer container">
+        <div class="footer-box">
+            <a href="index.html" class="logo">
+                <img src="img/safiaaa.png">
+            </a>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-youtube'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+            </div>
+        </div>
+        <div class="footer-box">
+            <h3>Pages</h3>
+            <a href="index.html">Home</a>
+            <a href="shoes.html">Shoes</a>
+            <a href="promo.html">Promo</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-box">
+            <h3>Informations</h3>
+            <a href="#">Privacy policy</a>
+            <a href="#">Refund policy</a>
+            <a href="#">Terms of use</a>
+            <a href="#">Disclaimer</a>
+        </div>
+        <div class="footer-box">
+            <h3>Branches</h3>
+            <p>United States</p>
+            <p>Japan</p>
+            <p>Germany</p>
+            <p>Italy</p>
+            <p>China</p>
+        </div>
+    </section>
+    
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>&#169; Zara - All Rights Reserved.</p>
+    </div>
+    
+    <!-- JS -->
+    <script src="main.js" defer></script>
+</body>
+</html>
