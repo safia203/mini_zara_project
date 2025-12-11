@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact - Zara</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <style>
         body {
             margin: 0;
             font-family: 'Roboto', sans-serif;
             background: linear-gradient(135deg, #fdfbfb, #ebedee);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
+            padding-top: 80px;
         }
         .contact-container {
             background: #ffffff;
@@ -25,6 +24,7 @@
             max-width: 500px;
             text-align: center;
             animation: fadeIn 1s ease-in-out;
+            margin: 40px auto;
         }
         h1 {
             margin-bottom: 20px;
@@ -85,8 +85,6 @@
             transform: translateY(-5px) scale(1.1);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.297);
         }
-
-        /* Couleur au clic (avec :active) */
         .social-links a.facebook:hover { color: #1877F2; }
         .social-links a.instagram:hover { color: #E1306C; }
         .social-links a.linkedin:hover { color: #0A66C2; }
@@ -99,6 +97,30 @@
     </style>
 </head>
 <body>
+    <!-- Header -->
+    <header>
+        <div class="nav container">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <img src="img/safiaaa.png">
+            </a>
+            <!-- Menu Links -->
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shoes.html">Shoes</a></li>
+                <li><a href="promo.html">Promo</a></li>
+                <li><a href="contact.html" class="active contact"><i class='bx bxs-contact'></i> Contact</a></li>
+            </ul>
+            <!-- Icons -->
+            <div class="nav-icons">
+                <a href="#" class="user"><i class='bx bxs-user'></i></a>
+                <a href="#" class="cart"><i class='bx bxs-cart'></i></a>
+                <a href="#" class="menu"><i class='bx bx-menu' id="menu-icon"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Container -->
     <div class="contact-container">
         <h1>Contactez-nous</h1>
         <form class="contact-form">
@@ -114,5 +136,50 @@
             <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
         </div>
     </div>
+
+    <!-- Footer -->
+    <section class="footer container" style="margin-top: 60px;">
+        <div class="footer-box">
+            <a href="index.html" class="logo">
+                <img src="img/safiaaa.png">
+            </a>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-youtube'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+            </div>
+        </div>
+        <div class="footer-box">
+            <h3>Pages</h3>
+            <a href="index.html">Home</a>
+            <a href="shoes.html">Shoes</a>
+            <a href="promo.html">Promo</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-box">
+            <h3>Informations</h3>
+            <a href="#">Privacy policy</a>
+            <a href="#">Refund policy</a>
+            <a href="#">Terms of use</a>
+            <a href="#">Disclaimer</a>
+        </div>
+        <div class="footer-box">
+            <h3>Branches</h3>
+            <p>United States</p>
+            <p>Japan</p>
+            <p>Germany</p>
+            <p>Italy</p>
+            <p>China</p>
+        </div>
+    </section>
+    
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>&#169; Zara - All Rights Reserved.</p>
+    </div>
+    
+    <!-- JS -->
+    <script src="main.js"></script>
 </body>
 </html>
