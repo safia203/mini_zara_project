@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Promotions - Zara</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Box Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<style>
+
+/* === Styles de base === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: white;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    color: black;
+    margin-bottom: 50px;
+}
+
+.header h1 {
+    color:black;
+}
+
+.header p {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+/* === Grid des promos === */
+.promos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+/* === Chaque carte promo (cadre) === */
+.promo-card {
+    background: #fff;
+    border: 2px solid #ccc;      /* Bordure du cadre */
+    border-radius: 15px;         /* Coins arrondis */
+    overflow: hidden;
+    width: 300px;                /* Largeur fixe pour uniformité */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Effet au hover */
+.promo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Image dans le cadre */
+.promo-image {
+    position: relative;
+    width: 100%;
+    height: 200px;               /* Hauteur fixe pour toutes les images */
+    overflow: hidden;
+    border-bottom: 2px solid #ccc; /* Bordure entre image et contenu */
+}
+
+.promo-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;           /* Remplit le cadre sans déformer */
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+.promo-card:hover .promo-image img {
+    transform: scale(1.05);
+}
+
+/* Badge de réduction */
+.discount-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff4757;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1em;
+    box-shadow: 0 4px 10px rgba(255, 71, 87, 0.4);
+}
+
+/* Contenu promo */
+.promo-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.promo-title {
+    font-size: 1.2em;
+    color: #2d3436;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.promo-description {
+    color: #555;
+    font-size: 0.95em;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.promo-link {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.promo-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2em;
+    }
+    .promos-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="nav container">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <img src="img/safiaaa.png" alt="Logo">
+            </a>
+            <!-- Menu Links -->
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shoes.html" class="active">Shoes</a></li>
+                <li><a href="promo.html">Promo</a></li>
+                <li><a href="contact.html" class="contact"><i class='bx bxs-contact'></i> Contact</a></li>
+            </ul>
+            <!-- Icons -->
+            <div class="nav-icons">
+                <a href="#" class="user"><i class='bx bxs-user'></i></a>
+                <a href="#" class="cart"><i class='bx bxs-cart'></i></a>
+                <a href="#" class="menu"><i class='bx bx-menu' id="menu-icon"></i></a>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="header">
+            <h1>🎉 Nos Promotions</h1>
+            <p>Enjoy our exceptional offers.</p>
+        </div>
+
+        <div class="promos-grid">
+            <!-- Promo 1 -->
+            <div class="promo-card">
+                <div class="promo-image">
+                    <img src="img/promo1.jpg" alt="Promo d'été">
+                    <div class="discount-badge">-50%</div>
+                </div>
+                <div class="promo-content">
+                    <h2 class="promo-title">Summer Promo 2024</h2>
+                    <p class="promo-description">
+                       Enjoy our exceptional summer offers on the entire collection. Don't miss this unique opportunity!
+                    </p>
+                    <a href="img/promo1.jpg" class="promo-link">Voir l'offre →</a>
+                </div>
+            </div>
+
+            <!-- Promo 2 -->
+            <div class="promo-card">
+                <div class="promo-image">
+                    <img src="img/promo2.jpg" alt="Black Friday">
+                    <div class="discount-badge">-70%</div>
+                </div>
+                <div class="promo-content">
+                    <h2 class="promo-title">Black Friday</h2>
+                    <p class="promo-description">
+                       Unprecedented discounts on the entire collection. Limited offer, hurry!
+                    </p>
+                    <a href="img/promo2.jpg" class="promo-link">Voir l'offre →</a>
+                </div>
+            </div>
+
+            <!-- Promo 3 -->
+            <div class="promo-card">
+                <div class="promo-image">
+                    <img src="img/promo8.jpg" alt="Nouveautés">
+                    <div class="discount-badge">-30%</div>
+                </div>
+                <div class="promo-content">
+                    <h2 class="promo-title">New arrivals</h2>
+                    <p class="promo-description">
+                       Discover our latest products at a reduced price. The new arrivals you've been waiting for are finally here!
+                    </p>
+                    <a href="img/promo8.jpg" class="promo-link">Voir l'offre →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter -->
+    <section class="newsletter container">
+        <div class="heading">
+            <h2>Subscribe <span>newsletter</span></h2>
+        </div>
+        <form action="">
+            <input type="email" placeholder="Enter your email..." class="email-box" required>
+            <input type="submit" value="Subscribe" class="btn">
+        </form>
+    </section>
+    
+    <!-- Footer -->
+    <section class="footer container">
+        <div class="footer-box">
+            <a href="index.html" class="logo">
+                <img src="img/safiaaa.png" alt="Logo">
+            </a>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-youtube'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+            </div>
+        </div>
+        <div class="footer-box">
+            <h3>Pages</h3>
+            <a href="index.html">Home</a>
+            <a href="shoes.html">Shoes</a>
+            <a href="promo.html">Promo</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-box">
+            <h3>Informations</h3>
+            <a href="#">Privacy policy</a>
+            <a href="#">Refund policy</a>
+            <a href="#">Terms of use</a>
+            <a href="#">Disclaimer</a>
+        </div>
+        <div class="footer-box">
+            <h3>Branches</h3>
+            <p>United States</p>
+            <p>Japan</p>
+            <p>Germany</p>
+            <p>Italy</p>
+            <p>China</p>
+        </div>
+    </section>
+    
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>&#169; Zara - All Rights Reserved.</p>
+    </div>
+    
+    <!-- JS -->
+    <script src="main.js" defer></script>
+</body>
+</html>
