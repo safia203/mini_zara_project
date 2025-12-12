@@ -84,7 +84,7 @@ git push
 
 Voici le lien de capteur de réussie de pipeline:
 
-![Pipeline réussie](img/pip_reussie.jpg)
+![Pipeline réussie](ZARA/img/pip_reussie.jpg)
 
 #### 6. Ajout de l'interface promo.html, shoes.html et contact.html au dépôt Git
 
@@ -188,7 +188,7 @@ docker run -d -p 8080:80 devops
 
 Lien de Capture de la création de l'image Docker :
 
-![Création de l'image Docker](img/Docker_img.jpg)
+![Création de l'image Docker](ZARA/img/Docker_img.jpg)
 
 #### 3. Tester le site dans le navigateur
 
@@ -196,13 +196,13 @@ Après avoir lancé le conteneur, le site est accessible à : http://localhost:8
 
 Voici les images utilisées pour prouver que le site fonctionne :
 
-![Page d'accueil](img/accueil.jpg)
+![Page d'accueil](ZARA/img/accueil.jpg)
 
-![Page Contact](img/contact.jpg)
+![Page Contact](ZARA/img/contact.jpg)
 
-![Page Shoes](img/shoes.jpg)
+![Page Shoes](ZARA/img/shoes.jpg)
 
-![Page Promo](img/promo.jpg)
+![Page Promo](ZARA/img/promo.jpg)
 
 Ces captures montrent que toutes les pages du site s'affichent correctement à travers Docker.
 
