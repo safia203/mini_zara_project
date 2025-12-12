@@ -3,9 +3,9 @@
 ## Équipe du projet
 
 - **Khoualed Meriem** - [@Aryem01](https://github.com/Aryem01)
-- **Mehalli Safia** - [@safia203](https://github.com/safia203)
+- **Mehalli Nebia Safia** - [@safia203](https://github.com/safia203)
 - **Sifodil Sarra** - [@SaraSF31](https://github.com/SaraSF31)
-- **Tadlaouti Milad Meriem** - [@Meriem-md](https://github.com/Meriem-md)
+- **Tadlaouti Milad Meriem Zarga** - [@Meriem-md](https://github.com/Meriem-md)
 
 ## 1. Introduction
 
